@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane alignment="CENTER" animated="false" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="630.0" prefHeight="400.0" prefWidth="600.0" text="DB Editor" textAlignment="CENTER" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+      <children>
+        <GridPane prefHeight="109.0" prefWidth="611.0" AnchorPane.bottomAnchor="283.79999999999995" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="7.7999999999999545" AnchorPane.topAnchor="0.0">
+          <columnConstraints>
+            <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="SOMETIMES" maxWidth="502.0" prefWidth="491.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="109.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+          <children>
+            <TextField fx:id="tf" alignment="TOP_LEFT" minHeight="60.0" prefHeight="84.0" prefWidth="486.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+              <GridPane.margin>
+                <Insets />
+              </GridPane.margin>
+            </TextField>
+            <Button alignment="CENTER" defaultButton="true" mnemonicParsing="false" onMouseClicked="#doLoad" text="Go" textFill="#101011" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+          </children>
+        </GridPane>
+        <TableView fx:id="tableView" layoutY="78.0" prefHeight="295.0" prefWidth="600.0">
+          <columns>
+            <TableColumn prefWidth="75.0" />
+            <TableColumn prefWidth="75.0" />
+          </columns>
+        </TableView>
+      </children></AnchorPane>
+  </content>
+</TitledPane>
